@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Property Rate Management System | Port Loko City Council</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <!-- OFFICIAL COUNCIL LETTERHEAD -->
+        <header class="council-letterhead">
+
+            <img
+                src="images/PORT LOKO CITY COUNCIL LOGO.jpg"
+                alt="Official Port Loko City Council Letterhead"
+                class="letterhead-image"
+            >
+
+        </header>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- SYSTEM TITLE -->
+            <section class="system-title">
+
+                <h1>PROPERTY RATE MANAGEMENT SYSTEM</h1>
+
+                <h2>PROPERTY RATE DEMAND NOTICE INFORMATION FORM</h2>
+
+                <p>
+                    Please provide accurate information in all applicable
+                    fields for official Port Loko City Council purposes.
+                </p>
+
+            </section>
+
+
+            <!-- PROPERTY INFORMATION FORM -->
+            <section class="form-section">
+
+                <div class="section-heading">
+
+                    <h2>Property Information</h2>
+
+                    <p>
+                        Fields marked with <span class="required">*</span>
+                        are required.
+                    </p>
+
+                </div>
+
+
+                <form id="propertyRateForm">
+
+                    <!-- PROPERTY CODE -->
+                    <div class="form-group">
+
+                        <label for="propertyCode">
+                            Property Code
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="propertyCode"
+                            name="propertyCode"
+                            placeholder="Enter property code"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PROPERTY OWNER -->
+                    <div class="form-group">
+
+                        <label for="propertyOwner">
+                            Name of Property Owner
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="propertyOwner"
+                            name="propertyOwner"
+                            placeholder="Enter full name of property owner"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PROPERTY TYPE -->
+                    <div class="form-group">
+
+                        <label for="propertyType">
+                            Property Type
+                            <span class="required">*</span>
+                        </label>
+
+                        <select
+                            id="propertyType"
+                            name="propertyType"
+                            required
+                        >
+
+                            <option value="">
+                                Select property type
+                            </option>
+
+                            <option value="Dwelling">
+                                Dwelling
+                            </option>
+
+                            <option value="Commercial">
+                                Commercial
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PROPERTY ADDRESS -->
+                    <div class="form-group">
+
+                        <label for="propertyAddress">
+                            Address of the Property
+                            <span class="required">*</span>
+                        </label>
+
+                        <textarea
+                            id="propertyAddress"
+                            name="propertyAddress"
+                            rows="3"
+                            placeholder="Enter the full address of the property"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- TENANT / CARETAKER -->
+                    <div class="form-group">
+
+                        <label for="tenantCaretaker">
+                            Name of Tenant/Caretaker
+                        </label>
+
+                        <input
+                            type="text"
+                            id="tenantCaretaker"
+                            name="tenantCaretaker"
+                            placeholder="Enter tenant or caretaker name"
+                        >
+
+                    </div>
+
+
+                    <!-- DEMAND NOTICE RECEIVED BY -->
+                    <div class="form-group">
+
+                        <label for="receivedBy">
+                            Demand Notice Received By
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="receivedBy"
+                            name="receivedBy"
+                            placeholder="Enter name of person who received the notice"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- DATE RECEIVED -->
+                    <div class="form-group">
+
+                        <label for="dateReceived">
+                            Date Received
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dateReceived"
+                            name="dateReceived"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- AMOUNT -->
+                    <div class="form-group">
+
+                        <label for="amount">
+                            Amount
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="number"
+                            id="amount"
+                            name="amount"
+                            min="0"
+                            step="0.01"
+                            placeholder="Enter amount"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- SECTION -->
+                    <div class="form-group">
+
+                        <label for="section">
+                            Section
+                            <span class="required">*</span>
+                        </label>
+
+                        <select
+                            id="section"
+                            name="section"
+                            required
+                        >
+
+                            <option value="">
+                                Select section
+                            </option>
+
+                            <option value="Falaba">
+                                Falaba
+                            </option>
+
+                            <option value="Senduge">
+                                Senduge
+                            </option>
+
+                            <option value="Sanda">
+                                Sanda
+                            </option>
+
+                            <option value="Adams">
+                                Adams
+                            </option>
+
+                            <option value="Kondoto">
+                                Kondoto
+                            </option>
+
+                            <option value="Macca">
+                                Macca
+                            </option>
+
+                            <option value="Magbani">
+                                Magbani
+                            </option>
+
+                            <option value="Old Port Loko">
+                                Old Port Loko
+                            </option>
+
+                            <option value="Moria">
+                                Moria
+                            </option>
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- SUBMIT BUTTON -->
+                    <div class="form-actions">
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                        >
+                            SUBMIT FORM
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <p>
+                © 2026 Port Loko City Council. All rights reserved.
+            </p>
+
+            <p>
+                Property Rate Management System
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

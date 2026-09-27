@@ -1,0 +1,394 @@
+/* =========================================================
+   PORT LOKO CITY COUNCIL
+   PROPERTY RATE MANAGEMENT SYSTEM
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f7;
+    color: #222;
+    line-height: 1.5;
+}
+
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   OFFICIAL LETTERHEAD
+   ========================================================= */
+
+.council-letterhead {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+    border-bottom: 1px solid #d9dee3;
+}
+
+.letterhead-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.main-content {
+    width: 94%;
+    max-width: 1100px;
+    margin: 30px auto 50px;
+}
+
+
+/* =========================================================
+   SYSTEM TITLE
+   ========================================================= */
+
+.system-title {
+    background: #ffffff;
+    text-align: center;
+    padding: 30px 25px;
+    margin-bottom: 25px;
+    border: 1px solid #dfe4e8;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.system-title h1 {
+    color: #174a36;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.system-title h2 {
+    color: #333333;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.system-title p {
+    color: #5f6872;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM CONTAINER
+   ========================================================= */
+
+.form-section {
+    background: #ffffff;
+    border: 1px solid #dfe4e8;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   FORM SECTION HEADING
+   ========================================================= */
+
+.section-heading {
+    padding: 20px 25px;
+    background: #f7f9fa;
+    border-bottom: 1px solid #dfe4e8;
+}
+
+.section-heading h2 {
+    color: #174a36;
+    font-size: 21px;
+    margin-bottom: 4px;
+}
+
+.section-heading p {
+    color: #667085;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+#propertyRateForm {
+    width: 100%;
+}
+
+
+/* =========================================================
+   TABLE-STYLE FORM ROW
+   ========================================================= */
+
+.form-group {
+    display: grid;
+    grid-template-columns: 34% 66%;
+    min-height: 65px;
+    border-bottom: 1px solid #e1e5e8;
+}
+
+
+/* LEFT SIDE — FIELD NAME */
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    background: #f7f9fa;
+    color: #273444;
+    font-weight: 600;
+    font-size: 14px;
+    border-right: 1px solid #e1e5e8;
+}
+
+
+/* REQUIRED STAR */
+
+.required {
+    color: #c62828;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+
+/* RIGHT SIDE — INPUT */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 14px 18px;
+    background: #ffffff;
+    color: #222222;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+
+/* INPUT FOCUS */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    background: #f8fbf9;
+    box-shadow: inset 3px 0 0 #174a36;
+}
+
+
+/* TEXTAREA */
+
+.form-group textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+
+/* DROPDOWN */
+
+.form-group select {
+    cursor: pointer;
+}
+
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa3ad;
+}
+
+
+/* SMALL NOTE UNDER SECTION */
+
+.field-note {
+    grid-column: 2;
+    display: block;
+    padding: 0 18px 12px;
+    color: #7a8490;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   SUBMIT AREA
+   ========================================================= */
+
+.form-actions {
+    padding: 25px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.submit-button {
+    border: none;
+    border-radius: 5px;
+    padding: 13px 35px;
+    background: #174a36;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submit-button:hover {
+    background: #103827;
+}
+
+.submit-button:active {
+    transform: translateY(1px);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    background: #174a36;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 15px;
+    font-size: 12px;
+}
+
+.footer p {
+    margin: 3px 0;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .main-content {
+        width: 95%;
+        margin-top: 22px;
+    }
+
+    .system-title {
+        padding: 25px 18px;
+    }
+
+    .system-title h1 {
+        font-size: 24px;
+    }
+
+    .system-title h2 {
+        font-size: 17px;
+    }
+
+    .form-group {
+        grid-template-columns: 38% 62%;
+    }
+
+    .form-group label {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .main-content {
+        width: 96%;
+        margin-top: 18px;
+        margin-bottom: 35px;
+    }
+
+    .system-title {
+        padding: 22px 14px;
+    }
+
+    .system-title h1 {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    .system-title h2 {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .system-title p {
+        font-size: 12px;
+    }
+
+    .section-heading {
+        padding: 17px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 18px;
+    }
+
+    /*
+       On small screens the table becomes
+       a simple vertical form for easier use.
+    */
+
+    .form-group {
+        display: block;
+        min-height: auto;
+    }
+
+    .form-group label {
+        display: block;
+        padding: 11px 14px;
+        border-right: none;
+        border-bottom: 1px solid #e1e5e8;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        display: block;
+        padding: 13px 14px;
+    }
+
+    .field-note {
+        padding: 0 14px 12px;
+    }
+
+    .form-actions {
+        padding: 20px 15px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 14px;
+    }
+}
